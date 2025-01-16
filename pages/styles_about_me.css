@@ -1,0 +1,106 @@
+/* Не спрашивайте, почему два разных одинаковых стиля...
+у меня какой-то баг, который лень дебагать
++ на момент написания этого коммента остается 20 минут до сдачи проекта sos */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: opacity 0.5s ease; /* Плавный переход */
+    background: url('../images/sky_bg.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.aboutme-container {
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 1200px; 
+    min-height: 500px; 
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Текстик */
+.about-text {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-text ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+/* Гифка справа */
+.about-image {
+    flex: 0 1 400px; 
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Кнопки*/
+.nav-buttons {
+    position: absolute; 
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10; /* Поверх остальных элементов */
+}
+
+.nav-button {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
